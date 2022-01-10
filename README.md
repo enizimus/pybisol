@@ -43,6 +43,7 @@ y = [E, Bs_1, Bs_2, Bmax_1, Bmax_2]
 with : 
 
 - `E` ... total energy stored in the system.
-- `Bs_1` and `Bs_2` ... stray field for solenoid 1 and 2.
+- `Bs_1` ... is the sum of the absolute values of the stray field in the computation points divided by the numer of points.
+- `Bs_2` ... is the sum of the squares of the stray field in the computation points divided by the number of points.
 - `Bmax_1` and `Bmax_2` ... maximal field for solenoid 1 and 2.
 
