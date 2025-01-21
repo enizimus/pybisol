@@ -3,17 +3,29 @@ This is a python wrapper package of a C++ implementation of a superconducting co
 
 ## **pybisol** installation instructions :
 
-- Package can be built by running : 
-```
-$ python setup.py build_ext -i
-``` 
-- Now the *.so* or *.pyd* (on windows) is used to import the *bisol* module from.
+Please make sure that you are using anaconda python and not your system python as it is only tested and verified with anaconda python. 
 
-- Package can also be installed by running : 
+First set up a new environment by opening your console and running : 
 ```bash
-$ python setup.py install
+conda create --name optienv python
 ```
-- This way it will be made available in the current environment everywhere.
+Activate the environment with :
+```bash
+conda activate optienv
+``` 
+Then you need to install the dependencies by running : 
+```python
+python -m pip install -r requirements.txt
+```
+After this you can install the library in 
+```bash
+$ python -m pip install .
+```
+This will install the library in the current environment.
+
+If you are using vscode to debug or run your code please make sure that you have selected the correct environment (that is `optienv`). This can be done by pressing `ctrl+shift+P` and searching for *Python: Select Interpreter*, there you need to select `optienv` for your environment.
+
+To make sure that everything is installed correctly, navigate to the `exmples/` directory and execute the `example.py` file. It should run and print and output if everything is ok.
 
 ## Usage instructions : 
 
